@@ -1,5 +1,4 @@
-FROM jenkins/jenkins:alpine-jdk17
-
+FROM --platform=linux/amd64 jenkins/jenkins:alpine-jdk17
 USER root
 
 RUN apk -v --no-cache --update add \
